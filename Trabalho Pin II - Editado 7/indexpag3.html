@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+
+<head>
+    <!-- Metadados -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="Csspg3.css" media="screen">
+
+    <!-- Título da página (aparece na aba) -->
+    <title>Cadastro</title>
+</head>
+
+<body style="background-color: rgb(8, 8, 77);">
+    <a href="index.html"> <img id="img1" style="float: inline-start;" ;"
+            src="https://sateliteassistencia.com.br/wp-content/uploads/2020/11/satelite_assistencia-logo-min.png"> </a>
+
+
+    <!-- Cabeçalho com título e subtítulo (ambos com css de id "titulo") -->
+
+
+    <div>
+
+        <h1 id="titulo">Cadastro Satelite Assistencia</h1>
+        <p id="subtitulo">Complete suas informações</p>
+        <br>
+    </div>
+
+    <!-- Início do formulário -->
+
+    <form style="margin-right: 70%;margin-left: -15%; border: 10px solid  rgb(167, 249, 255);text-align: center;"
+        id="form1">
+
+        <fieldset class="grupo">
+            <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
+
+            <div class="campo">
+                <label for="email"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required placeholder="Digite seu Nome:">
+                <label for="nome"><strong>Data de Nascimento</strong></label>
+                <input type="date" name="nome" id="nome" required placeholder="Digite Sua Data de Nascimento:">
+                <label for="nome"><strong>Cep</strong></label>
+                <input type="number" name="nome" id="nome" required placeholder="Digite Seu Cep:">
+                <label for="nome"><strong>Endereço:</strong></label>
+                <input type="text" name="nome" id="nome" required placeholder="Digite Seu Endereço">
+            </div>
+
+            <!-- Campo do sobrenome com legenda "sobrenome" e css de classe "campo" -->
+            <div style="margin-left: 10%;" class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required placeholder="Digite Seu Sobrenome:">
+                <label for="sobrenome"><strong>Telefone:</strong></label>
+                <input type="tel" name="sobrenome" id="sobrenome" required placeholder="Digite Seu Telefone:">
+                <label for="sobrenome"><strong>Email</strong></label>
+                <input type="email" name="sobrenome" id="sobrenome" required placeholder="Digite Seu Email:">
+            </div>
+        </fieldset>
+
+        <!-- Campo de email com-->
+        <div class="campo">
+            <label for="email"><strong>Senha:</strong></label>
+            <input type="password" name="email" id="email" required placeholder="Digite Sua Senha:">
+            <label for="email"><strong>Senha:</strong></label>
+            <input type="password" name="email" id="email" required placeholder="Confirme Sua Senha:">
+        </div>
+
+        <!-- Campo de desenvolvimento web com 3 opções de botões selecionáveis (radio button) e css de classe "campo" -->
+        <div class="campo">
+            <label><strong>Qual Plano voce Deseja?</strong></label>
+            <label>
+                <input type="radio" name="devweb" value="frontend" checked>Free
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="backend">Basico
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="fullstack">Completo
+            </label>
+        </div>
+        </div>
+
+        <!-- Campo de senioridade com 3 opções para escolha (select option) e css de classe "campo" -->
+        <div class="campo">
+            <label for="senioridade"><strong>Selecione quantos dependentes:</strong></label>
+            <select id="senioridade" required>
+                <option selected disabled value="">Selecione</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>Mais</option>
+            </select>
+        </div>
+
+
+        <!-- Caixa de texto -->
+        <div class="campo">
+            <br>
+            <label for="experiencia"><strong>Conte um pouco mais da sua experiência: </strong></label>
+            <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+        </div>
+
+        <!-- Botão para enviar o formulário -->
+        <button class="botao" type="submit" onclick="msg()" onsubmit="">Concluído</button>
+
+    </form>
+
+    <a href="https://app.jivosite.com/join.html?token=26ecc6d60886a11f3b92402dd8921aa7.1975756"> Link Chat</a>
+
+</body>
+
+<script>
+    function msg() {
+        alert("Você enviou seu cadastro, retornaremos um email após à analise");
+    }
+</script>
+
+</html>

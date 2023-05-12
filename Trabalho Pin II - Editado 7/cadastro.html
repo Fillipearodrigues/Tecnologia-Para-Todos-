@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html leng = "utf-8">
+    <header>
+        <title>Cadastrar</title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="cadastro.css">
+    </header>
+    <body>
+        <div id="Cadastrar">
+            <form id="novoCadastrar">
+                <h2>Cadastro</h2>
+                <div class="form-group">
+                    <label>Nome</label>
+                    <input id="nomeUsuario" type="text" name="nomeUsuario" placeholder="Digite seu nome"/>
+                    <span class="msg-erro msg-nomeUsuario"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label>Data de Nascimento</label>
+                    <input id="dataNascimento" type="date" name="dataNascimento"/>
+                    <span class="msg-erro msg-dataNascimento"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label>Número de contato</label>
+                    <input id="contato" type="tel" name="contato" placeholder="Digite seu número de contato"/>
+                    <span class="msg-erro msg-contato"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label>E-mail</label>
+                    <input id="email" type="text" name="email" placeholder="Seu e-mail..."/>
+                    <span class="msg-erro msg-email"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label>Senha</label>
+                    <input id="password" type="password" name="senha" placeholder="Sua senha"/>
+                    <span class="msg-erro msg-password"></span>
+                </div>
+
+                <div class="form-group">
+                    <label>Confirmar Senha</label>
+                    <input id="password2" type="password" name="senha2" placeholder="Sua senha"/>
+                    <span class="msg-erro msg-password2"></span>
+                </div>
+                
+                <button type="submit" class="btn btn-primary" id='botao'> 
+                    Cadastrar
+                </button>               
+            </form>
+        </div>  
+    <script type="text/javascript" src="cadastro.js"></script>      
+    </body>
+</html>
